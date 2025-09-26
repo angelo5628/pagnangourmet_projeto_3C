@@ -15,8 +15,8 @@ cnpj_formatado = f"{cnpj[:2]}.{cnpj[2:5]}.{cnpj[5:8]}/{cnpj[8:12]}-{cnpj[12:]}"
 
 telefone_valido = False
 while not telefone_valido:
-    telefone = input("Telefone: ")
-    if len(telefone) in [9, 10] and telefone.isdigit():
+    telefone = input("Telefone (com DDD): ")
+    if len(telefone) in [10, 11] and telefone.isdigit():
         telefone_valido = True
     else:
         print("Telefone inválido.")
